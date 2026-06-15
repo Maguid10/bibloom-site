@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://maguid10.github.io/bibloom-site/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://maguid10.github.io/bibloom-site/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://maguid10.github.io/bibloom-site/bible-verses-for-anxiety/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://maguid10.github.io/bibloom-site/bible-verses-for-fear/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://maguid10.github.io/bibloom-site/bible-verses-for-strength/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://maguid10.github.io/bibloom-site/bible-verses-for-peace/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://maguid10.github.io/bibloom-site/bible-verses-for-hope/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://maguid10.github.io/bibloom-site/bible-verses-for-rest/</loc><changefreq>weekly</changefreq></url>
+  <url><loc>https://maguid10.github.io/bibloom-site/bible-verses-for-grace/</loc><changefreq>weekly</changefreq></url>
 </urlset>
