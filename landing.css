@@ -156,46 +156,11 @@ p { margin: 0; }
 .phone-side:first-child { margin-right: -48px; transform: translateY(24px) rotate(-6deg) scale(.94); }
 .phone-side:last-child { margin-left: -48px; transform: translateY(24px) rotate(6deg) scale(.94); }
 
-/* ---------- Numbers + streak card ---------- */
-.numbers { padding: 72px 0 96px; }
-.numbers-grid { display: grid; gap: 40px; }
+/* ---------- Shared: section titles + cards ---------- */
 .section-title { font-size: clamp(32px, 5vw, 48px); text-align: center; }
-.section-title.left { text-align: left; }
 .section-title.light, .lead.light { color: var(--white); }
 .lead.light { opacity: .92; }
-.stats { margin: 28px 0 0; display: grid; gap: 28px; }
-.stats dt { font-size: clamp(48px, 7vw, 64px); font-weight: 800; color: var(--accent); line-height: 1; letter-spacing: -0.03em; }
-.stats dd { margin: 6px 0 0; max-width: 300px; color: var(--ink-soft); }
-
 .card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); padding: 28px; }
-.card-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
-.card-head img { border-radius: 12px; }
-.card-kicker { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
-.card h3 { font-size: 22px; }
-.streak-card > p { color: var(--ink-soft); font-size: 17px; }
-.week { margin-top: 24px; background: var(--cream); border-radius: 18px; padding: 20px; }
-.week-label { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); }
-.week-bars { height: 150px; display: flex; align-items: flex-end; gap: 10px; margin-top: 16px; }
-.week-bars span {
-  flex: 1; height: var(--h);
-  border-radius: 10px 10px 4px 4px;
-  background: rgba(241, 90, 36, .35);
-  transform-origin: bottom; transform: scaleY(0);
-  transition: transform .7s cubic-bezier(.2, .8, .2, 1);
-}
-.week-bars span.peak { background: var(--accent); }
-.is-visible .week-bars span { transform: scaleY(1); }
-.week-bars span:nth-child(2) { transition-delay: .08s; }
-.week-bars span:nth-child(3) { transition-delay: .16s; }
-.week-bars span:nth-child(4) { transition-delay: .24s; }
-.week-bars span:nth-child(5) { transition-delay: .32s; }
-.week-bars span:nth-child(6) { transition-delay: .40s; }
-.week-bars span:nth-child(7) { transition-delay: .48s; }
-.week-foot { display: flex; justify-content: space-between; margin-top: 14px; }
-.week-foot small { display: block; font-size: 13px; color: var(--ink-soft); }
-.week-foot strong { font-size: 18px; font-weight: 800; }
-.week-foot .right { text-align: right; }
-.week-foot .accent { font-size: 24px; }
 
 /* ---------- Waves ---------- */
 .wave { line-height: 0; margin-bottom: -1px; }
@@ -304,7 +269,6 @@ p { margin: 0; }
   .hero { padding: 160px 0 60px; }
   .phone-side:first-child { margin-right: -30px; }
   .phone-side:last-child { margin-left: -30px; }
-  .numbers-grid { grid-template-columns: 1fr 1.15fr; align-items: center; gap: 64px; }
   .features { grid-template-columns: 1.1fr .9fr; gap: 56px; }
   .f-shot-inline { display: none; }
   .feature-phone { display: block; width: min(300px, 100%); justify-self: center; transition: opacity .25s ease; }
@@ -323,14 +287,14 @@ p { margin: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal, .week-bars span { transition: none; opacity: 1; transform: none; }
+  .reveal { transition: none; opacity: 1; transform: none; }
 }
 
 /* ---------- Official Apple "Download on the App Store" badge ---------- */
 .store-badge { display: inline-block; line-height: 0; transition: transform .15s ease; }
 .store-badge:hover { transform: translateY(-2px); }
 .store-badge img { width: auto; height: 60px; }
-.badge-hero { margin-top: 32px; }
+.hero-cta { display: flex; justify-content: center; margin-top: 32px; }
 .badge-menu { margin-top: 14px; align-self: flex-start; }
 .badge-menu img { height: 52px; }
 .badge-footer { margin-top: 26px; }
