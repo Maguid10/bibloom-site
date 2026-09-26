@@ -321,3 +321,12 @@ p { margin: 0; }
   html { scroll-behavior: auto; }
   .reveal, .week-bars span { transition: none; opacity: 1; transform: none; }
 }
+
+/* ---------- Official Apple "Download on the App Store" badge ---------- */
+.store-badge { display: inline-block; line-height: 0; transition: transform .15s ease; }
+.store-badge:hover { transform: translateY(-2px); }
+.store-badge img { width: auto; height: 60px; }
+.badge-hero { margin-top: 32px; }
+.badge-menu { margin-top: 14px; align-self: flex-start; }
+.badge-menu img { height: 52px; }
+.badge-footer { margin-top: 26px; }
